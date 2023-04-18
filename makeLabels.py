@@ -2,9 +2,9 @@ import os
 import cv2
 import numpy as np
 
-folder_path = 'outputs'
+folder_path = 'outputs'#folder of masks
 classnum = 8
-label_path = 'labels/outputs/'
+label_path = 'labels/outputs/'#folder of the output pseudo labels
 
 for filename in os.listdir(folder_path):
     labelimg = np.zeros((480, 720))
